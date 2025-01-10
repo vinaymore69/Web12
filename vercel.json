@@ -1,0 +1,14 @@
+{
+    "redirects": [
+      {
+        "source": "/:path.html",
+        "destination": "/:path"
+      }
+    ],
+    "rewrites": [
+      {
+        "source": "/:path",
+        "destination": "/:path.html"
+      }
+    ]
+  }
