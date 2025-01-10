@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookstore</title>
+  
+</head>
+<body>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Price</th>
+                <th>Discount</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><span class="title" id="gatsby">The Great Gatsby</span></td>
+                <td>F. Scott Fitzgerald</td>
+                <td>$15</td>
+                <td><span class="discount-info" id="discount-gatsby">Hover to see discount!</span></td>
+            </tr>
+            <tr>
+                <td><span class="title" id="1984">1984</span></td>
+                <td>George Orwell</td>
+                <td>$18</td>
+                <td><span class="discount-info" id="discount-1984">Hover to see discount!</span></td>
+            </tr>
+            <tr>
+                <td><span class="title" id="mockingbird">To Kill a Mockingbird</span></td>
+                <td>Harper Lee</td>
+                <td>$12</td>
+                <td><span class="discount-info" id="discount-mockingbird">Hover to see discount!</span></td>
+            </tr>
+            <tr>
+                <td><span class="title" id="catcher">The Catcher in the Rye</span></td>
+                <td>J.D. Salinger</td>
+                <td>$20</td>
+                <td><span class="discount-info" id="discount-catcher">Hover to see discount!</span></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        // Hover and display discount for "The Great Gatsby"
+        document.getElementById('gatsby').addEventListener('mouseover', function() {
+            document.getElementById('discount-gatsby').innerText = '10% off';
+            document.getElementById('discount-gatsby').style.display = 'inline';
+        });
+
+        document.getElementById('gatsby').addEventListener('mouseout', function() {
+            document.getElementById('discount-gatsby').textContent = 'Hover to see discount!';
+            document.getElementById('discount-gatsby').style.display = 'none';
+        });
+
+        // Hover and display discount for "1984"
+        document.getElementById('1984').addEventListener('mouseover', function() {
+            document.getElementById('discount-1984').textContent = '20% off';
+            document.getElementById('discount-1984').style.display = 'inline';
+        });
+
+        document.getElementById('1984').addEventListener('mouseout', function() {
+            document.getElementById('discount-1984').textContent = 'Hover to see discount!';
+            document.getElementById('discount-1984').style.display = 'none';
+        });
+
+        // Hover and display discount for "To Kill a Mockingbird"
+        document.getElementById('mockingbird').addEventListener('mouseover', function() {
+            document.getElementById('discount-mockingbird').textContent = '15% off';
+            document.getElementById('discount-mockingbird').style.display = 'inline';
+        });
+
+        document.getElementById('mockingbird').addEventListener('mouseout', function() {
+            document.getElementById('discount-mockingbird').textContent = 'Hover to see discount!';
+            document.getElementById('discount-mockingbird').style.display = 'none';
+        });
+
+        // Hover and display discount for "The Catcher in the Rye"
+        document.getElementById('catcher').addEventListener('mouseover', function() {
+            document.getElementById('discount-catcher').textContent = '25% off';
+            document.getElementById('discount-catcher').style.display = 'inline';
+        });
+
+        document.getElementById('catcher').addEventListener('mouseout', function() {
+            document.getElementById('discount-catcher').textContent = 'Hover to see discount!';
+            document.getElementById('discount-catcher').style.display = 'none';
+        });
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,551 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Raleway:400");
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+
+}
+@font-face {
+  font-family: 'Moon walk';
+  src: url(Moon\ Walk.ttf);
+}
+/* Custom properties for gradient and animation */
+@property --angle {
+    syntax: '<angle>';
+    initial-value: 90deg;
+    inherits: true;
+}
+::-webkit-scrollbar{
+  display: none;
+}
+:root {
+    --d: 2500ms;
+    --angle: 90deg;
+    --c1: white;
+    --c2: rgba(168, 239, 255, 0.1);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    color: white;
+    font-family: 'Moon walk', sans-serif;
+    background-color: #1d1d1d;
+    /* Semi-transparent background for glass effect */
+   
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+    
+}
+.contact-us {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width:100%;
+    justify-content: center;
+    align-items: center ;
+}
+
+.conatct-form{
+    display: flex;
+    gap:40px;
+    flex-direction: row;
+}
+.contact-heading h5{
+  margin-top: -30px;
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-style: italic;
+}
+.contact-heading h1{
+  font-size: 80px;
+}
+.contact-heading {
+    justify-content: end;
+    text-align: end;
+    font-family: 'Moon Walk';
+    
+    gap: 10px;
+}
+
+.contact-name {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+input[name="textfield"],
+textarea[name="message"] {
+    background: #1D1D1D;
+    box-shadow: inset 2px 2px 10px rgb(3, 3, 3),
+        inset -1px -1px 5px rgba(114, 114, 114, 0.6);
+    border-width: 1px;
+    /* Ensure consistent border width */
+    border-style: solid;
+    /* Specify the border style explicitly */
+    border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
+    padding: 1rem;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    animation: borderRotate var(--d) linear infinite forwards;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, #C8431E, #8D7449, #26A672);
+    
+}
+#fl-name{
+  width: 48%;
+}
+
+textarea[name="message"] {
+    height: 150px;
+    resize: none;
+}
+
+input[name="textfield"]:focus,
+textarea[name="message"]:focus {
+    outline: none;
+    /* Removes the focus border */
+    border: none;
+    /* Optionally remove the default border */
+}
+
+/* Placeholder styling */
+input::placeholder,
+textarea::placeholder {
+    color: rgba(240, 248, 255, 0.463);
+    opacity: 0.7;
+    padding-left: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+button {
+    background-color: #343434;
+    border: solid;
+    border-width: 1px;
+    border-color: azure;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: aliceblue;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Animation for rotating border */
+@keyframes borderRotate {
+    100% {
+        --angle: 420deg;
+    }
+}
+
+
+/* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+    .contact-us {
+        margin-top: 50px;
+        padding: 20px;
+    }
+
+    .conatct-form {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .contact-heading h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .contact-heading h5 {
+        font-size: 16px;
+        text-align: center;
+        margin-top: -10px;
+    }
+
+    .contact-name {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #fl-name {
+        width: 100%; /* Full width on mobile */
+    }
+
+    .contact-info {
+        gap: 15px;
+    }
+
+    input[name="textfield"],
+    textarea[name="message"] {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    button {
+        padding: 12px 0;
+        font-size: 16px;
+    }
+
+    .contact-socials {
+        text-align: center;
+        gap: 15px;
+    }
+
+    .contact-socials label {
+        font-size: 30px;
+    }
+
+    .contact-socials a {
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+
+    .parent {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      margin: 30px 0px 30px 0px;
+    }
+    
+    .child {
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transform-style: preserve-3d;
+      transition: all 0.3s cubic-bezier(0.68, 0.85, 0.265, 1.85);
+      border-radius: 5px;
+      margin: 0 5px;
+      box-shadow:
+        inset 1px 1px 2px #fff,
+        0 0 5px #4442;
+        background-color: #ffffff;
+    }
+    
+    .child:hover {
+      background-color: white;
+      background-position:
+        -100px 100px,
+        -100px 100px;
+      transform: perspective(180px) rotateX(60deg) translateY(2px);
+    }
+    
+    .child-1:hover {
+      box-shadow: 0px 10px 10px #1e90ff;
+    }
+    .child-2:hover {
+      box-shadow: 0px 10px 10px #ff00ff;
+    }
+    .child-3 {
+      fill: #11d09d;
+
+    }
+    .child-3:hover {
+      box-shadow: 0px 10px 10px #11d09d;
+      fill: #11d09d;
+    }
+    .child-4:hover {
+      box-shadow: 0px 10px 10px #4267b2;
+    }
+    
+    .button {
+      cursor: pointer;
+      width: 100%;
+      height: 100%;
+      border: none;
+      background-color: transparent;
+      font-size: 20px;
+      transition-duration: 0.5s;
+      transition-timing-function: cubic-bezier(0.68, -0.85, 0.265, 1.55);
+    }
+    
+    .child:hover > .button {
+      transform: translate3d(0px, 20px, 30px) perspective(80px) rotateX(-60deg)
+        translateY(2px) translateZ(10px);
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .contact-socials{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    font-family: 'poppins';
+    width: 100%;
+    
+  
+    margin-bottom: 30px;
+}
+.conatact-details {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+  height: auto;
+  align-items: center;
+  padding: 10px;
+}
+
+  .contact-socials label{
+    margin-top: 40px;
+display: flex;
+justify-content: start;
+font-size: 60px;
+align-items: start;
+font-family: 'Moon Walk';
+text-decoration:underline;
+
+  }
+  .contact-socials a{
+    display: flex;
+    padding: 10px;
+    justify-content: start;
+    text-decoration: none;
+    color: #07b0ff;
+    font-size: 40px;
+    
+    align-self: start;
+    font-family: "Moon Walk",'poppins',sans-serif;
+    font-weight: 400;
+    font-style: italic;
+
+  }
+
+
+
+  .contact-email{
+    text-align: start;
+    justify-content: start;
+    align-items: start;
+  }
+
+
+
+
+
+
+
+
+
+
+
+ */
+/* Base Styles */
+
+.parent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 30px 0px 30px 0px;
+}
+
+.child {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+  transition: all 0.3s cubic-bezier(0.68, 0.85, 0.265, 1.85);
+  border-radius: 5px;
+  margin: 0 5px;
+  box-shadow:
+    inset 1px 1px 2px #fff,
+    0 0 5px #4442;
+    background-color: #ffffff;
+}
+
+.child:hover {
+  background-color: white;
+  background-position:
+    -100px 100px,
+    -100px 100px;
+  transform: perspective(180px) rotateX(60deg) translateY(2px);
+}
+
+.child-1:hover {
+  box-shadow: 0px 10px 10px #1e90ff;
+}
+.child-2:hover {
+  box-shadow: 0px 10px 10px #ff00ff;
+}
+.child-3 {
+  fill: #11d09d;
+
+}
+.child-3:hover {
+  box-shadow: 0px 10px 10px #11d09d;
+  fill: #11d09d;
+}
+.child-4:hover {
+  box-shadow: 0px 10px 10px #4267b2;
+}
+
+.button {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.68, -0.85, 0.265, 1.55);
+}
+
+.child:hover > .button {
+  transform: translate3d(0px, 20px, 30px) perspective(80px) rotateX(-60deg)
+    translateY(2px) translateZ(10px);
+}
+.contact-socials {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+}
+
+.contact-socials label {
+  font-size: 50px;
+  font-family: 'Moon Walk', sans-serif;
+  text-decoration: underline;
+}
+
+.contact-socials a {
+  text-decoration: none;
+  color: #07b0ff;
+  font-size: 30px;
+  font-family: "Moon Walk", 'Poppins', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.conatact-details {
+  width: 80%;
+  text-align: center;
+}
+
+.contact-phone, .contact-email {
+  margin-bottom: 15px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1024px) {
+  /* Tablet Styles */
+  .parent {
+    gap: 8px;
+  }
+
+  .child {
+    width: 50px;
+    height: 50px;
+  }
+
+  .contact-socials label {
+    font-size: 40px;
+  }
+
+  .contact-socials a {
+    font-size: 25px;
+  }
+
+  .conatact-details {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Mobile Styles */
+  .parent {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .child {
+    width: 45px;
+    height: 45px;
+  }
+
+  .contact-socials label {
+    font-size: 30px;
+  }
+
+  .contact-socials a {
+    font-size: 20px;
+  }
+
+  .conatact-details {
+    width: 90%;
+  }
+}

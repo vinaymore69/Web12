@@ -1,0 +1,534 @@
+/* CSS file (index.css) */
+
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@font-face {
+  font-family: 'Moon Walk';
+  src: url('Moon Walk.ttf') format('truetype');
+  /* Adjust the path if necessary */
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #1d1d1d;
+  /* background-position: center; */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+  width: 100%;
+  overflow: auto;
+  padding-top: 5rem;
+
+}
+
+
+
+
+
+/* Global Styles */
+
+/* Hero Content Flexbox */
+.page1 {
+  background-color: rgba(255, 255, 255, 0.038);
+  width: 100%;
+  padding: 140px 0 70px 0;
+  margin-top: -100px;
+
+}
+
+.main-hero-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 20px;
+  box-sizing: border-box;
+  backdrop-filter: blur(10px);
+  border-radius: 25px;
+
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px rgba(99, 99, 99, 0.37);
+}
+
+/* Left Content Part */
+.left-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.left-content #blue-text-shadow {
+  text-shadow: 3px 2px 12px #00e5ffc9;
+}
+
+.left-content h2 {
+  color: #fefefe;
+  font-family: 'Bradley Hand', cursive;
+  font-size: 45px;
+  font-weight: bold;
+  margin-bottom: -5px;
+}
+
+.left-content p {
+  padding: 5px;
+  font-family: 'poppins';
+  line-height: 25px;
+  font-weight: 100;
+  font-size: 17px;
+  /* font-weight: 900; */
+  color: #b6b6b6;
+  width: 80%;
+}
+
+#heightlight {
+  background-image: linear-gradient(45deg, #C8431E, #8D7449, #26A672);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Poppins';
+  font-weight: 900;
+  font-size: 50px;
+}
+
+/* Button Styling */
+.left-content-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.first-button, .second-button {
+  border-radius: 20px;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease-in-out;
+  font-family: 'Bradley Hand', cursive;
+}
+
+.first-button {
+  background-color: #9e86ff;
+  color: white;
+}
+
+.first-button:hover {
+  box-shadow: -5px 5px #c5b7febf;
+}
+
+.second-button {
+  background-color: #FBAA4E;
+  color: white;
+}
+
+.second-button:hover {
+  box-shadow: 5px 5px #fffdfd;
+}
+
+/* Right Image Part */
+.right-image {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 380px;
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.right-img {
+  mix-blend-mode: lighten;
+}
+
+.right-image img {
+  display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 919px) {
+  .main-hero-content {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    /* margin: 10px; */
+  }
+
+  .left-content {
+    width: 100%;
+  }
+
+  .right-image {
+    width: 80%;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .left-content p {
+    width: 95%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+  .website-details .detail1,
+  .website-details .detail2,
+  .website-details .detail3,
+  .website-details .detail4 {
+    width: 95%;
+    padding: 0px;
+  }
+
+}
+
+
+
+.website-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 30px;
+  font-family: 'Poppins', sans-serif;
+  gap: 40px;
+}
+
+.website-details p {
+  text-align: center;
+  color: white;
+  margin-top: 10px;
+  font-size: small;
+  font-family: 'poppins';
+}
+
+.website-details h3 {
+  color: #72f372;
+  margin-top: 10px;
+}
+
+.website-details .detail1,
+.website-details .detail2,
+.website-details .detail3,
+.website-details .detail4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 58% 43% 33% 64% / 50% 38% 53% 50%;
+  background: transparent;
+  position: relative;
+  transition: all 0.8s ease-in-out;
+  height: 250px;
+  text-align: center;
+}
+
+.website-details .detail1 {
+  box-shadow: inset 0px 120px 148px -47px rgb(250, 75, 232);
+}
+
+.website-details .detail2 {
+  box-shadow: inset 0px 120px 148px -47px rgb(92, 250, 75);
+}
+
+.website-details .detail3 {
+  box-shadow: inset 0px 120px 148px -47px rgb(250, 98, 75);
+}
+
+.website-details .detail4 {
+  box-shadow: inset 0px 120px 148px -47px rgba(75, 189, 250, 1);
+  border-right: none;
+  /* Remove border for the last item */
+}
+
+.website-details .detail1:hover,
+.website-details .detail2:hover,
+.website-details .detail3:hover,
+.website-details .detail4:hover {
+  background-color: #a2a2a32c;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Icons */
+.website-details i {
+  font-size: 36px;
+  color: #ffffff;
+}
+
+/* Responsive settings for mobile (max-width: 600px) */
+@media (max-width: 600px) {
+  .website-details {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .website-details .detail1,
+  .website-details .detail2,
+  .website-details .detail3,
+  .website-details .detail4 {
+    width: 80%;
+    padding: 15px;
+    border-right: none;
+    /* Remove borders for single-column layout */
+  }
+}
+
+/* Responsive settings for medium screens (max-width: 1111px) */
+@media (max-width: 1111px) {
+  .website-details {
+    /* flex-wrap: wrap; */
+    gap: 20px;
+  }
+
+  .website-details .detail1,
+  .website-details .detail2,
+  .website-details .detail3,
+  .website-details .detail4 {
+    width: 85%;
+    padding: 15px;
+  }
+}
+
+
+
+
+
+
+/* Second section of main page fo website details */
+
+
+
+.working-project {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  /* background: rgb(194, 166, 54);
+    background: linear-gradient(90deg, #fbaa4e 0%, #c39689 50%, #995e4c 100%); */
+  padding: 30px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  margin: 10px 0px 10px 0px;
+}
+
+.working-project .working-project-content {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  font-family: 'Poppins';
+  font-size: medium;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.working-project .working-project-content p {
+  font-size: 18px;
+  margin: 15px;
+  color: rgb(255, 255, 255);
+  font-family: 'poppins';
+  font-weight: lighter;
+  font-style: normal;
+  font-size: medium;
+}
+
+/* Adjust width for smaller screens */
+@media (max-width: 1200px) {
+  .working-project .working-project-content {
+    width: 90%;
+  }
+
+  .working-project .working-project-content p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .working-project .working-project-content {
+    width: 90%;
+
+  }
+
+  .working-project .working-project-content button {
+    width: auto;
+  }
+
+  .working-project .working-project-content p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .working-project .working-project-content {
+    width: 95%;
+  }
+
+  .working-project .working-project-content p {
+    font-size: 15px;
+
+  }
+}
+
+
+.working-project .working-project-content h3 {
+  margin: 0px;
+  font-family: 'Moon Walk';
+  font-size: 40px;
+  font-weight: bolder;
+  color: #fff;
+}
+
+
+
+.working-project .working-project-content button {
+  align-self: center;
+  width: auto;
+  color: #1D1D1D;
+  justify-self: center;
+  text-align: center;
+  background: rgb(255, 255, 255);
+  font-weight: 400;
+  font-family: "Ndot-55";
+  font-size: 20px;
+  padding: 10px 30px;
+  border-radius: 25px;
+  cursor: pointer;
+  border: thin solid white;
+  /* Set a specific border width */
+  transition: all 0.5s ease-in-out;
+}
+
+.working-project .working-project-content button:hover,
+.working-project .working-project-content button:focus {
+  /* Add focus state */
+  background-color: transparent;
+  border-color: #ffffff;
+  border-width: thin;
+  /* Consistent border width */
+  padding: 10px 30px;
+  color: #ffffff97;
+}
+
+
+
+
+
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track (background of the scrollbar) */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  /* Light grey background */
+}
+
+/* Thumb (the draggable part of the scrollbar) */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #d0368a 0%, #708ad4 99%);
+  border-radius: 100px;
+  box-shadow: inset 2px 2px 5px rgba(255, 255, 255, 0.5);
+  /* White-ish shadow */
+  transition: background 0.4s ease, box-shadow 0.4s ease, transform 0.3s ease;
+  /* Smooth transition for fluid effect */
+}
+
+/* On hover, make the scrollbar more pronounced */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #ff69b4 0%, #1e90ff 99%);
+  /* Brighter gradient on hover */
+  box-shadow: inset 4px 4px 10px rgba(255, 255, 255, 0.6);
+  /* Enhance the shadow for a liquid effect */
+  transform: scaleY(1.1);
+  /* Slight scaling to emphasize the "liquid" effect */
+}
+
+/* When active (being dragged), give a "liquid" motion feel */
+::-webkit-scrollbar-thumb:active {
+  background: linear-gradient(180deg, #ff1493 0%, #4682b4 99%);
+  /* More vibrant gradient when dragged */
+  box-shadow: inset 6px 6px 15px rgba(255, 255, 255, 0.7);
+  /* Increase shadow for a more fluid look */
+  transform: scaleY(1.2);
+  /* Larger scaling to accentuate the drag motion */
+}
+
+
+
+
+.image-32 {
+  width: 45px;
+  /* Adjust size */
+  height: auto;
+  animation: rotate-animation 0.5s ease-in-out 2;
+  animation-delay: 2s;
+  /* Animation duration: 2s, Repeat: 2 times */
+}
+
+@keyframes rotate-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(30deg);
+    /* Rotate to 30 degrees */
+  }
+
+  100% {
+    transform: rotate(0deg);
+    /* Rotate to 90 degrees */
+  }
+}

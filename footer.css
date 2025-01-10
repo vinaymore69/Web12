@@ -1,0 +1,139 @@
+/* Footer Styling */
+footer {
+   
+    backdrop-filter: blur(3px); /* Adds the blur effect */
+margin-top: 10px;
+    color: #4f4f4f; /* Dark pastel gray */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    /* border-top: 1px solid rgba(79, 79, 79, 0.15);/ */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
+    z-index: 12;
+}
+
+/* Top Footer Content */
+.top-footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+.top-footer-content h3{
+    color:rgb(0, 153, 255);
+    font-family: "Moon Walk";
+
+}
+.footer-content2,
+.footer-content3,
+.footer-content4 {
+    flex: 1;
+    min-width: 180px;
+    text-align: center; /* Centers text within each section */
+}
+
+/* Section Headings */
+.footer-links-heading,
+.footer-Others-heading {
+    border-left: 4px solid #ffffff; /* Pastel pink */
+    border-radius: 5px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-family: 'Poiret One', sans-serif;
+    text-align: left;
+}
+
+.footer-content3 {
+    justify-content: flex-start;
+}
+
+/* Quick Links and Explore */
+.footer-links ul,
+.footer-others ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.footer-links ul li,
+.footer-others ul li {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #6d6d6d; /* Soft gray */
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-links ul li:hover,
+.footer-others ul li:hover {
+    color: #00b7ff; /* Pastel pink hover */
+}
+
+/* Social Media Icons */
+.footer-social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.footer-social-icons i {
+    color: #6d6d6d; /* Soft gray */
+    font-size: 18px;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.footer-social-icons i:hover {
+    color: #ff0000; /* Pastel pink hover */
+    transform: scale(1.1);
+}
+
+/* Bottom Footer */
+.bottom-footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 14px;
+}
+
+.rights h5,
+.Website-language h5 {
+    margin: 0;
+    color: #4f4f4f; /* Dark pastel gray */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    footer {
+        padding: 15px;
+    }
+
+    .top-footer-content {
+        flex-direction: column;
+    }
+
+    .bottom-footer-content {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer-links ul li,
+    .footer-others ul li {
+        font-size: 12px;
+    }
+
+    .footer-social-icons i {
+        font-size: 16px;
+    }
+}

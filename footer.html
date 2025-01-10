@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sticky Footer</title>
+        <script src="https://kit.fontawesome.com/a9a67c95a9.js"
+            crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="footer.css">
+    </head>
+    <style>
+        body{
+            padding: 0px;
+            margin: 0px;
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+    <body>
+        <div class="main-content">
+            <!-- Your main content goes here -->
+        </div>
+
+        <footer id="this-footer">
+       
+        </footer>
+        
+    </body>
+    <script>
+        var footer_code=`<div class="top-footer-content">
+                <div class="footer-content1">
+                    <div class="logo-content">
+                        <img src="logo.png" alt="Website Logo">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Velit dignissimos illo nihil laborum
+                            reiciendis praesentium delectus vero explicabo quo,
+                            aspernatur dolor voluptatibus doloribus ullam quidem
+                            sit ipsam earum debitis incidunt?</p>
+                    </div>
+                </div>
+                <div class="footer-content2">
+                    <div class="footer-links-heading">
+                        <h3>Links</h3>
+                    </div>
+                    <div class="footer-links">
+                        <ul>
+                            <li>Home</li>
+                            <li>About Us</li>
+                            <li>Contact Us</li>
+                            <li>Project</li>
+                            <li>Resources</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-content3">
+                    <div class="footer-Others-heading">
+                        <h3>Others</h3>
+                    </div>
+                    <div class="footer-others">
+                        <ul>
+                            <li>Terms and Services</li>
+                            <li>Privacy Policy</li>
+                            <li>Resume</li>
+                            <li>Gallery</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-content4">
+                    <div class="footer-Others-heading">
+                        <h3>Follow Us</h3>
+                    </div>
+                    <h4>Follow me on Social Media</h4>
+                    <div class="footer-social-icons">
+                        <i class="fa-brands fa-instagram fa-fade fa-lg"></i>
+                        <i class="fa-brands fa-x-twitter fa-fade fa-lg"></i>
+                        <i class="fa-brands fa-youtube fa-fade fa-lg"></i>
+                        <i class="fa-brands fa-linkedin-in fa-fade fa-lg"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-footer-content">
+                <div class="rights"><h5>@ All Rights Reserved 2024</h5></div>
+                <div class="Website-language"><h5>English</h5></div>
+            </div>`;
+        document.getElementById("this-footer").innerHTML= footer_code;
+    </script>
+</html>

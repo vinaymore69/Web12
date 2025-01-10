@@ -1,0 +1,204 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+ background-color: #1d1d1d;
+ /* overflow: hidden; */
+}
+::-webkit-scrollbar{
+  display: none;
+}
+html{
+  scroll-behavior: smooth;
+height: 100%;
+}
+
+.main{
+  width: 100%;
+ height: 100%; 
+}
+
+/* Define the custom fonts */
+@font-face {
+  font-family: 'Moon Walk';
+  src: url(Moon\ Walk.ttf);
+}
+
+@font-face {
+  font-family: 'Rockpor';
+  src: url(Rockpor.otf);
+}
+
+/* Section styling */
+.section {
+  position: relative;
+  /* background: #0000002f; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0px;
+  font-family: 'Moon Walk', 'Poppins', sans-serif;
+  padding: 20px 20px 0px 20px ; /* Added padding for spacing */
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+/* Name heading styling */
+#name {
+  background-image: linear-gradient(45deg, #C8431E, #8D7449, #26A672, #ce30d3);
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: -20px;
+}
+
+.section h2 {
+  color: #ffffffa9;
+  font-size: 6rem; /* Adjusted for better readability on mobile */
+  cursor: default;
+  text-align: center;
+  margin-bottom: 20px; /* Added space between heading and paragraph */
+}
+
+/* Add transform effect for visibility */
+.section h2.visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Paragraph styling */
+
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+  .section h2 {
+    font-size: 4rem; /* Adjust heading size for mobile */
+  }
+  
+  
+
+  .scroll {
+    width: 100%; /* Set to full width for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .section h2 {
+    font-size: 3rem; /* Further adjust heading size for smaller screens */
+    word-wrap: break-word;
+  }
+ 
+}
+
+/* Scroll styling */
+.scroll {
+  position: relative;
+  display: flex;
+  width: 100%; /* Full width to avoid extra space */
+  overflow: hidden;
+  mask-image: linear-gradient(90deg, transparent, #fff 30%, #fff 70%, transparent);
+}
+
+/* Scroll container for responsive sizes */
+.scroll div {
+  white-space: nowrap;
+  animation: animate var(--t) linear infinite;
+  animation-delay: calc(var(--t)/-1);
+}
+
+.scroll div:nth-child(2) {
+  animation: animate2 var(--t) linear infinite;
+  animation-delay: calc(var(--t)/-2);
+}
+
+@keyframes animate {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes animate2 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+
+/* Scroll span styling */
+.scroll div span {
+  display: inline-flex;
+  margin: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  background: #333;
+  color: #fff;
+  transition: 0.5s;
+  font-family: 'Moon Walk', 'Poppins', sans-serif;
+}
+
+.scroll div span:hover {
+  background: #f52789;
+  cursor: pointer;
+}
+
+/* Ensure body and html elements take full width and height */
+
+
+.scramble-text {
+  font-size: 1.8rem;
+  width: 50%;
+  color: #AAB396;
+  font-weight: 200;
+  text-align: start;
+  font-family: 'Poppins';
+}
+
+.scramble-text span {
+  font-weight: 500;
+  font-size: 2.5rem;
+  color: rgb(0, 171, 238);
+  font-family: 'Manjari';
+}
+
+/* Adjustments for small screens */
+
+@media (max-width: 768px) {
+  .scramble-text,
+  #paragraph3,
+  #paragraph4,
+  #paragraph5 {
+    font-size: 1.5rem; /* Reduce font size on tablets */
+    width: 80%; /* Increase width to use more screen space on tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .scramble-text,
+  #paragraph3,
+  #paragraph4,
+  #paragraph5 {
+    font-size: 1.3rem; /* Further reduce font size on mobile */
+    width: 100%; /* Use full width on mobile for better readability */
+  }
+
+  .scramble-text span {
+    font-size: 2rem; /* Adjust span font size for mobile */
+  }
+}
+
+/* Adjust spacing for text in paragraphs */
+#paragraph3, #paragraph4, #paragraph5 {
+  color: #AAB396;
+  font-size: 1.8rem;
+  font-weight: 200;
+  text-align: start;
+  font-family: 'Poppins';
+  width: 50%;
+}

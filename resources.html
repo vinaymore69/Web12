@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resources</title>
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+  <link rel="stylesheet" href="resource.css">
+  <link rel="stylesheet" href="menu.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="preloader.css" >
+
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Great+Vibes&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+</head>
+
+<script src="https://kit.fontawesome.com/a9a67c95a9.js" crossorigin="anonymous"></script>
+
+
+<body>
+
+
+  <!-- Menu -->
+
+  <header class="header">
+    <div class="menu">
+        <div class="logo">
+            <img src="logo2.png" alt="Website Logo">
+        </div>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li class="inactive-menu"><a   href="index.html" >Home</a></li>
+                <li class="inactive-menu"><a href="about.html" >About</a></li>
+                <li class="inactive-menu"><a href="contactus.html">Contact Us</a></li>
+                <li class="inactive-menu"><a href="projects.html">Projects</a></li>
+                <li class="active-menu"><a id="active-menu" href="resources.html" style="color: aliceblue;">Resources</a></li>
+            </ul>
+        </nav>
+        <div class="social">
+            <a href="https://instagram.com" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://facebook.com" target="_blank" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://linkedin.com" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        <div class="menu-icon" id="menu-icon" onclick="openMenuDrawer()">
+            <span class="material-symbols-outlined">menu</span>
+        </div>
+    </div>
+</header>
+
+<div class="overlay" id="overlay" >
+    <div class="overlay-content" >
+        <span class="close-icon" id="close-icon" onclick="closeMenuDrawer()">x</span>
+        <ul class="overlay-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="resources.html">Resources</a></li>
+        </ul>
+        <div class="overlay-socials">
+            <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </div>
+</div>
+
+
+  <!-- ending menu -->
+
+
+  <!-- Main Heading and resources  -->
+  <section>
+
+    <h1 class="heading">Resources</h1>
+
+  </section>
+
+  <div id="globe" style="position: fixed; left: 10%; top:15%"></div>
+  
+
+<div class="tabs">
+  <button onclick="displayNotes('cpp',this)" style="background-color: aliceblue; color: #1d1d1d;">C++</button>
+  <button onclick="displayNotes('python',this)">PYTHON</button>
+  <button onclick="displayNotes('java',this)">JAVA</button>
+</div>
+
+<div class="main-content" id="cpp">
+  <h1>
+     C++ Notes  </h1>
+ 
+  <div class="moleskine-wrapper" >
+    <div class="moleskine-notebook" onclick="open_Book('CPP_1')" style="cursor: pointer;">
+      <div class="notebook-cover">
+        <div class="notebook-skin">Sangeeta Shirsat</div>
+      </div>
+      <div class="notebook-page"></div>
+    </div>
+    <h4>Chapter 1</h4>
+  </div>
+  <div class="moleskine-wrapper" >
+    <div class="moleskine-notebook" onclick="open_Book('CPP_2')" style="cursor: pointer;">
+      <div class="notebook-cover blue">
+        <div class="notebook-skin">Sangeeta Shirsat</div>
+      </div>
+      <div class="notebook-page ruled"></div>
+    </div>
+    <h4>Chapter 2</h4>
+  </div>
+  <div class="moleskine-wrapper" >
+    <div class="moleskine-notebook" onclick="open_Book('CPP_3')" style="cursor: pointer;">
+      <div class="notebook-cover yellow">
+        <div class="notebook-skin">Sangeeta Shirsat</div>
+      </div>
+      <div class="notebook-page squared"></div>
+    </div>
+    <h4>Chapter 3</h4>
+  </div>
+  <div class="moleskine-wrapper" >
+    <div class="moleskine-notebook" onclick="open_Book('CPP_4')" style="cursor: pointer;">
+      <div class="notebook-cover green">
+        <div class="notebook-skin">Sangeeta Shirsat</div>
+      </div>
+      <div class="notebook-page dotted"></div>
+    </div>
+    <h4>Chapter 4</h4>
+  </div>
+  <div class="moleskine-wrapper">
+    <div class="moleskine-notebook" onclick="open_Book('Python_5')" style="cursor: pointer;">
+      <div class="notebook-cover pink">
+        <div class="notebook-skin">Sangeeta Shirsat</div>
+      </div>
+      <div class="notebook-page dotted"></div>
+    </div>
+    <h4>Chapter 5</h4>
+  </div>
+  
+  
+  
+  <h1>
+    C++ Assignments  </h1>
+<div class="assignments">
+    <div class="assign-book">
+      <div class="assign-book-cover">
+        <div>
+          <h1>Assignment</h1>
+          <div class="assign-separator"></div>
+          <h2>No. 1</h2>
+        </div>
+      </div>
+      <div class="assign-book-content">
+        <h3>An Excerpt from Chapter One</h3>
+    
+        <p>Mrs. Dalloway said she would buy the flowers herself.</p>
+    
+        <p>For Lucy had her work cut out for her. The doors would be taken off their hinges; Rumpelmayer's men were coming. And then, thought Clarissa Dalloway, what a morning--fresh as if issued to children on a beach.</p>
+    
+        <p>What a lark! What a plunge! For so it had always seemed to her, when, with a little squeak of the hinges, which she could hear now, she had burst open the French windows and plunged at Bourton into the open air. How fresh, how calm, stiller than this of course, the air was in the early morning; like the flap of a wave; the kiss of a wave; chill and sharp and yet (for a girl of eighteen as she then was) solemn, feeling as she did, standing there at the open window, that something awful was about to happen; looking at the flowers, at the trees with the smoke winding off them and the rooks rising, falling; standing and looking until Peter Walsh said, "Musing among the vegetables?"--was that it?--"I prefer men to cauliflowers"--was that it? He must have said it at breakfast one morning when she had gone out on to the terrace--Peter Walsh. He would be back from India one of these days, June or July, she forgot which, for his letters were awfully dull; it was his sayings one remembered; his eyes, his pocket-knife, his smile, his grumpiness and, when millions of things had utterly vanished--how strange it was!--a few sayings like this about cabbages.</p>
+
+			<p>She stiffened a little on the kerb, waiting for Durtnall's van to pass. A charming woman, Scrope Purvis thought her (knowing her as one does know people who live next door to one in Westminster); a touch of the bird about her, of the jay, blue-green, light, vivacious, though she was over fifty, and grown very white since her illness. There she perched, never seeing him, waiting to cross, very upright.</p>
+
+			<p>For having lived in Westminster--how many years now? over twenty,--one feels even in the midst of the traffic, or waking at night, Clarissa was positive, a particular hush, or solemnity; an indescribable pause; a suspense (but that might be her heart, affected, they said, by influenza) before Big Ben strikes. There! Out it boomed. First a warning, musical; then the hour, irrevocable. The leaden circles dissolved in the air. Such fools we are, she thought, crossing Victoria Street. For Heaven only knows why one loves it so, how one sees it so, making it up, building it round one, tumbling it, creating it every moment afresh; but the veriest frumps, the most dejected of miseries sitting on doorsteps (drink their downfall) do the same; can't be dealt with, she felt positive, by Acts of Parliament for that very reason: they love life. In people's eyes, in the swing, tramp, and trudge; in the bellow and the uproar; the carriages, motor cars, omnibuses, vans, sandwich men shuffling and swinging; brass bands; barrel organs; in the triumph and the jingle and the strange high singing of some aeroplane overhead was what she loved; life; London; this moment of June.</p>
+
+			<p>For it was the middle of June. The War was over, except for some one like Mrs. Foxcroft at the Embassy last night eating her heart out because that nice boy was killed and now the old Manor House must go to a cousin; or Lady Bexborough who opened a bazaar, they said, with the telegram in her hand, John, her favourite, killed; but it was over; thank Heaven--over. It was June. The King and Queen were at the Palace. And everywhere, though it was still so early, there was a beating, a stirring of galloping ponies, tapping of cricket bats; Lords, Ascot, Ranelagh and all the rest of it; wrapped in the soft mesh of the grey-blue morning air, which, as the day wore on, would unwind them, and set down on their lawns and pitches the bouncing ponies, whose forefeet just struck the ground and up they sprung, the whirling young men, and laughing girls in their transparent muslins who, even now, after dancing all night, were taking their absurd woolly dogs for a run; and even now, at this hour, discreet old dowagers were shooting out in their motor cars on errands of mystery; and the shopkeepers were fidgeting in their windows with their paste and diamonds, their lovely old sea-green brooches in eighteenth-century settings to tempt Americans (but one must economise, not buy things rashly for Elizabeth), and she, too, loving it as she did with an absurd and faithful passion, being part of it, since her people were courtiers once in the time of the Georges, she, too, was going that very night to kindle and illuminate; to give her party. But how strange, on entering the Park, the silence; the mist; the hum; the slow-swimming happy ducks; the pouched birds waddling; and who should be coming along with his back against the Government buildings, most appropriately, carrying a despatch box stamped with the Royal Arms, who but Hugh Whitbread; her old friend Hugh--the admirable Hugh!</p>
+
+			<p>"Good-morning to you, Clarissa!" said Hugh, rather extravagantly, for they had known each other as children. "Where are you off to?"</p>
+
+			<p>"I love walking in London," said Mrs. Dalloway. "Really it's better than walking in the country."</p>
+        <!-- Add the remaining content here -->
+      </div>
+    </div>
+
+
+    <div class="assign-book">
+      <div class="assign-book-cover">
+        <div>
+          <h1>Assignment</h1>
+          <div class="assign-separator"></div>
+          <h2>No. 2</h2>
+        </div>
+      </div>
+      <div class="assign-book-content">
+        <h3>An Excerpt from Chapter One</h3>
+    
+        <p>Mrs. Dalloway said she would buy the flowers herself.</p>
+    
+        <p>For Lucy had her work cut out for her. The doors would be taken off their hinges; Rumpelmayer's men were coming. And then, thought Clarissa Dalloway, what a morning--fresh as if issued to children on a beach.</p>
+    
+        <p>What a lark! What a plunge! For so it had always seemed to her, when, with a little squeak of the hinges, which she could hear now, she had burst open the French windows and plunged at Bourton into the open air. How fresh, how calm, stiller than this of course, the air was in the early morning; like the flap of a wave; the kiss of a wave; chill and sharp and yet (for a girl of eighteen as she then was) solemn, feeling as she did, standing there at the open window, that something awful was about to happen; looking at the flowers, at the trees with the smoke winding off them and the rooks rising, falling; standing and looking until Peter Walsh said, "Musing among the vegetables?"--was that it?--"I prefer men to cauliflowers"--was that it? He must have said it at breakfast one morning when she had gone out on to the terrace--Peter Walsh. He would be back from India one of these days, June or July, she forgot which, for his letters were awfully dull; it was his sayings one remembered; his eyes, his pocket-knife, his smile, his grumpiness and, when millions of things had utterly vanished--how strange it was!--a few sayings like this about cabbages.</p>
+
+			<p>She stiffened a little on the kerb, waiting for Durtnall's van to pass. A charming woman, Scrope Purvis thought her (knowing her as one does know people who live next door to one in Westminster); a touch of the bird about her, of the jay, blue-green, light, vivacious, though she was over fifty, and grown very white since her illness. There she perched, never seeing him, waiting to cross, very upright.</p>
+
+			<p>For having lived in Westminster--how many years now? over twenty,--one feels even in the midst of the traffic, or waking at night, Clarissa was positive, a particular hush, or solemnity; an indescribable pause; a suspense (but that might be her heart, affected, they said, by influenza) before Big Ben strikes. There! Out it boomed. First a warning, musical; then the hour, irrevocable. The leaden circles dissolved in the air. Such fools we are, she thought, crossing Victoria Street. For Heaven only knows why one loves it so, how one sees it so, making it up, building it round one, tumbling it, creating it every moment afresh; but the veriest frumps, the most dejected of miseries sitting on doorsteps (drink their downfall) do the same; can't be dealt with, she felt positive, by Acts of Parliament for that very reason: they love life. In people's eyes, in the swing, tramp, and trudge; in the bellow and the uproar; the carriages, motor cars, omnibuses, vans, sandwich men shuffling and swinging; brass bands; barrel organs; in the triumph and the jingle and the strange high singing of some aeroplane overhead was what she loved; life; London; this moment of June.</p>
+
+			<p>For it was the middle of June. The War was over, except for some one like Mrs. Foxcroft at the Embassy last night eating her heart out because that nice boy was killed and now the old Manor House must go to a cousin; or Lady Bexborough who opened a bazaar, they said, with the telegram in her hand, John, her favourite, killed; but it was over; thank Heaven--over. It was June. The King and Queen were at the Palace. And everywhere, though it was still so early, there was a beating, a stirring of galloping ponies, tapping of cricket bats; Lords, Ascot, Ranelagh and all the rest of it; wrapped in the soft mesh of the grey-blue morning air, which, as the day wore on, would unwind them, and set down on their lawns and pitches the bouncing ponies, whose forefeet just struck the ground and up they sprung, the whirling young men, and laughing girls in their transparent muslins who, even now, after dancing all night, were taking their absurd woolly dogs for a run; and even now, at this hour, discreet old dowagers were shooting out in their motor cars on errands of mystery; and the shopkeepers were fidgeting in their windows with their paste and diamonds, their lovely old sea-green brooches in eighteenth-century settings to tempt Americans (but one must economise, not buy things rashly for Elizabeth), and she, too, loving it as she did with an absurd and faithful passion, being part of it, since her people were courtiers once in the time of the Georges, she, too, was going that very night to kindle and illuminate; to give her party. But how strange, on entering the Park, the silence; the mist; the hum; the slow-swimming happy ducks; the pouched birds waddling; and who should be coming along with his back against the Government buildings, most appropriately, carrying a despatch box stamped with the Royal Arms, who but Hugh Whitbread; her old friend Hugh--the admirable Hugh!</p>
+
+			<p>"Good-morning to you, Clarissa!" said Hugh, rather extravagantly, for they had known each other as children. "Where are you off to?"</p>
+
+			<p>"I love walking in London," said Mrs. Dalloway. "Really it's better than walking in the country."</p>
+        <!-- Add the remaining content here -->
+      </div>
+    </div>
+
+    <div class="assign-book">
+      <div class="assign-book-cover">
+        <div>
+          <h1>Assignment</h1>
+          <div class="assign-separator"></div>
+          <h2>No. 2</h2>
+        </div>
+      </div>
+      <div class="assign-book-content">
+        <h3>An Excerpt from Chapter One</h3>
+    
+        <p>Mrs. Dalloway said she would buy the flowers herself.</p>
+    
+        <p>For Lucy had her work cut out for her. The doors would be taken off their hinges; Rumpelmayer's men were coming. And then, thought Clarissa Dalloway, what a morning--fresh as if issued to children on a beach.</p>
+    
+        <p>What a lark! What a plunge! For so it had always seemed to her, when, with a little squeak of the hinges, which she could hear now, she had burst open the French windows and plunged at Bourton into the open air. How fresh, how calm, stiller than this of course, the air was in the early morning; like the flap of a wave; the kiss of a wave; chill and sharp and yet (for a girl of eighteen as she then was) solemn, feeling as she did, standing there at the open window, that something awful was about to happen; looking at the flowers, at the trees with the smoke winding off them and the rooks rising, falling; standing and looking until Peter Walsh said, "Musing among the vegetables?"--was that it?--"I prefer men to cauliflowers"--was that it? He must have said it at breakfast one morning when she had gone out on to the terrace--Peter Walsh. He would be back from India one of these days, June or July, she forgot which, for his letters were awfully dull; it was his sayings one remembered; his eyes, his pocket-knife, his smile, his grumpiness and, when millions of things had utterly vanished--how strange it was!--a few sayings like this about cabbages.</p>
+
+			<p>She stiffened a little on the kerb, waiting for Durtnall's van to pass. A charming woman, Scrope Purvis thought her (knowing her as one does know people who live next door to one in Westminster); a touch of the bird about her, of the jay, blue-green, light, vivacious, though she was over fifty, and grown very white since her illness. There she perched, never seeing him, waiting to cross, very upright.</p>
+
+			<p>For having lived in Westminster--how many years now? over twenty,--one feels even in the midst of the traffic, or waking at night, Clarissa was positive, a particular hush, or solemnity; an indescribable pause; a suspense (but that might be her heart, affected, they said, by influenza) before Big Ben strikes. There! Out it boomed. First a warning, musical; then the hour, irrevocable. The leaden circles dissolved in the air. Such fools we are, she thought, crossing Victoria Street. For Heaven only knows why one loves it so, how one sees it so, making it up, building it round one, tumbling it, creating it every moment afresh; but the veriest frumps, the most dejected of miseries sitting on doorsteps (drink their downfall) do the same; can't be dealt with, she felt positive, by Acts of Parliament for that very reason: they love life. In people's eyes, in the swing, tramp, and trudge; in the bellow and the uproar; the carriages, motor cars, omnibuses, vans, sandwich men shuffling and swinging; brass bands; barrel organs; in the triumph and the jingle and the strange high singing of some aeroplane overhead was what she loved; life; London; this moment of June.</p>
+
+			<p>For it was the middle of June. The War was over, except for some one like Mrs. Foxcroft at the Embassy last night eating her heart out because that nice boy was killed and now the old Manor House must go to a cousin; or Lady Bexborough who opened a bazaar, they said, with the telegram in her hand, John, her favourite, killed; but it was over; thank Heaven--over. It was June. The King and Queen were at the Palace. And everywhere, though it was still so early, there was a beating, a stirring of galloping ponies, tapping of cricket bats; Lords, Ascot, Ranelagh and all the rest of it; wrapped in the soft mesh of the grey-blue morning air, which, as the day wore on, would unwind them, and set down on their lawns and pitches the bouncing ponies, whose forefeet just struck the ground and up they sprung, the whirling young men, and laughing girls in their transparent muslins who, even now, after dancing all night, were taking their absurd woolly dogs for a run; and even now, at this hour, discreet old dowagers were shooting out in their motor cars on errands of mystery; and the shopkeepers were fidgeting in their windows with their paste and diamonds, their lovely old sea-green brooches in eighteenth-century settings to tempt Americans (but one must economise, not buy things rashly for Elizabeth), and she, too, loving it as she did with an absurd and faithful passion, being part of it, since her people were courtiers once in the time of the Georges, she, too, was going that very night to kindle and illuminate; to give her party. But how strange, on entering the Park, the silence; the mist; the hum; the slow-swimming happy ducks; the pouched birds waddling; and who should be coming along with his back against the Government buildings, most appropriately, carrying a despatch box stamped with the Royal Arms, who but Hugh Whitbread; her old friend Hugh--the admirable Hugh!</p>
+
+			<p>"Good-morning to you, Clarissa!" said Hugh, rather extravagantly, for they had known each other as children. "Where are you off to?"</p>
+
+			<p>"I love walking in London," said Mrs. Dalloway. "Really it's better than walking in the country."</p>
+        <!-- Add the remaining content here -->
+      </div>
+    </div>
+
+   
+
+
+  </div>
+  <!-- <h1>
+    C++ PPTs  </h1>
+    
+    <div id="ppts">
+        <div id="ppts-main">
+          <div id="left">
+            <h4>Chapter 1</h4>
+            <h4>Chapter 2</h4>
+            <h4>Chapter 3</h4>
+            <h4>Chapter 4</h4>
+            <h4>Chapter 5</h4>
+          </div>
+          <div id="right">
+            <div id="ppt-card">
+              <div id="ppt-card-img"></div>
+              <div id="ppt-card-info">
+
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+
+
+    </div> -->
+
+    
+</div>
+      
+     
+  
+
+
+
+
+
+
+
+
+
+
+  <div class="main-content" id="python" style="display: none;">
+    <h1>
+       Python <br> Notes</h1>
+    <div class="moleskine-wrapper" >
+      <div class="moleskine-notebook" onclick="open_Book('Python_1')" style="cursor: pointer;">
+        <div class="notebook-cover">
+          <div class="notebook-skin">Sangeeta Shirsat</div>
+        </div>
+        <div class="notebook-page"></div>
+      </div>
+      <h4>Chapter 1</h4>
+    </div>
+    <div class="moleskine-wrapper">
+      <div class="moleskine-notebook" onclick="open_Book('Python_2')" style="cursor: pointer;">
+        <div class="notebook-cover blue">
+          <div class="notebook-skin">Sangeeta Shirsat</div>
+        </div>
+        <div class="notebook-page ruled"></div>
+      </div>
+      <h4>Chapter 2</h4>
+    </div>
+    <div class="moleskine-wrapper">
+      <div class="moleskine-notebook" onclick="open_Book('Python_3')" style="cursor: pointer;">
+        <div class="notebook-cover yellow">
+          <div class="notebook-skin">Sangeeta Shirsat</div>
+        </div>
+        <div class="notebook-page squared"></div>
+      </div>
+      <h4>Chapter 3</h4>
+    </div>
+    <div class="moleskine-wrapper">
+      <div class="moleskine-notebook" onclick="open_Book('Python_4')" style="cursor: pointer;">
+        <div class="notebook-cover green">
+          <div class="notebook-skin">Sangeeta Shirsat</div>
+        </div>
+        <div class="notebook-page dotted"></div>
+      </div>
+      <h4>Chapter 4</h4>
+    </div>
+    <div class="moleskine-wrapper">
+      <div class="moleskine-notebook" onclick="open_Book('Python_5')" style="cursor: pointer;">
+        <div class="notebook-cover pink">
+          <div class="notebook-skin">Sangeeta Shirsat</div>
+        </div>
+        <div class="notebook-page dotted"></div>
+      </div>
+      <h4>Chapter 5</h4>
+    </div>
+  </div>
+  
+
+  <div class="main-content" id="java" style="display: none;">
+    <h1>
+       JAVA  Notes</h1>
+    <div class="moleskine-wrapper" >
+      <div class="moleskine-notebook" onclick="open_Book('Python_1')" style="cursor: pointer;">
+        <div class="notebook-cover">
+          <div class="notebook-skin">Sangeeta Shirsat</div>
+        </div>
+        <div class="notebook-page"></div>
+      </div>
+      <h4>Chapter 1</h4>
+    </div>
+    <div class="moleskine-wrapper">
+      <div class="moleskine-notebook" onclick="open_Book('Python_2')" style="cursor: pointer;">
+        <div class="notebook-cover blue">
+          <div class="notebook-skin">Sangeeta Shirsat</div>
+        </div>
+        <div class="notebook-page ruled"></div>
+      </div>
+      <h4>Chapter 2</h4>
+    </div>
+    <div class="moleskine-wrapper">
+      <div class="moleskine-notebook" onclick="open_Book('Python_3')" style="cursor: pointer;">
+        <div class="notebook-cover yellow">
+          <div class="notebook-skin">Sangeeta Shirsat</div>
+        </div>
+        <div class="notebook-page squared"></div>
+      </div>
+      <h4>Chapter 3</h4>
+    </div>
+    <div class="moleskine-wrapper">
+      <div class="moleskine-notebook" onclick="open_Book('Python_4')" style="cursor: pointer;">
+        <div class="notebook-cover green">
+          <div class="notebook-skin">Sangeeta Shirsat</div>
+        </div>
+        <div class="notebook-page dotted"></div>
+      </div>
+      <h4>Chapter 4</h4>
+    </div>
+    <div class="moleskine-wrapper">
+      <div class="moleskine-notebook" onclick="open_Book('Python_5')" style="cursor: pointer;">
+        <div class="notebook-cover pink">
+          <div class="notebook-skin">Sangeeta Shirsat</div>
+        </div>
+        <div class="notebook-page dotted"></div>
+      </div>
+      <h4>Chapter 5</h4>
+    </div>
+  </div>
+  <!-- Ending of Main Heading and resources  -->
+
+
+
+<!-- Footer -->
+
+<footer id="this-footer">
+  
+</footer>
+
+<!-- Footer ending -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="resources.js"></script>
+  <script src="index.js"></script>
+  <script src="footer.js"></script>
+  <script src="weblanguage.js"></script>
+  <script src="menu.js"></script>
+
+  <script type="module" >
+
+
+
+    
+
+
+
+
+
+    import * as THREE from "https://cdn.jsdelivr.net/npm/three@0.155.0/build/three.module.js";
+    
+    // Helper function to create a pentagon geometry
+    function createPentagonGeometry(radius) {
+        const vertices = [];
+        for (let i = 0; i < 5; i++) {
+            const angle = (i / 5) * Math.PI * 2;
+            vertices.push(Math.cos(angle) * radius, Math.sin(angle) * radius, 0);
+        }
+        // Center of the pentagon for triangulation
+        vertices.push(0, 0, 0);
+    
+        const indices = [0, 1, 5, 1, 2, 5, 2, 3, 5, 3, 4, 5, 4, 0, 5];
+    
+        const geometry = new THREE.BufferGeometry();
+        geometry.setAttribute("position", new THREE.Float32BufferAttribute(vertices, 3));
+        geometry.setIndex(indices);
+        geometry.computeVertexNormals();
+    
+        return geometry;
+    }
+    
+    // Custom latitudinal sampling function
+    function latitudinalSphere(samples, radius, rowSpacingFactor) {
+        const points = [];
+        const rows = Math.ceil(Math.sqrt(samples) * rowSpacingFactor);
+        const phiStep = Math.PI / rows;
+    
+        for (let i = 0; i <= rows; i++) {
+            const phi = i * phiStep; // From 0 to PI
+            const numPointsInRow = Math.ceil(2 * Math.PI * Math.sin(phi) * rows);
+    
+            for (let j = 0; j < numPointsInRow; j++) {
+                const theta = (j / numPointsInRow) * 2 * Math.PI; // From 0 to 2PI
+                const x = radius * Math.sin(phi) * Math.cos(theta);
+                const y = radius * Math.cos(phi);
+                const z = radius * Math.sin(phi) * Math.sin(theta);
+    
+                points.push(new THREE.Vector3(x, y, z));
+            }
+        }
+        return points;
+    }
+    
+    // Initialize scene
+    const loader = new THREE.TextureLoader();
+    const scene = new THREE.Scene();
+    const globeEl = document.getElementById("globe");
+    
+    const camera = new THREE.PerspectiveCamera(
+        45,
+        globeEl.clientWidth / globeEl.clientHeight,
+        0.1, // Near clipping plane
+        1000 // Far clipping plane
+    );
+    camera.position.set(0, 0, 4);
+    
+    const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+    renderer.setSize(globeEl.clientWidth, globeEl.clientHeight);
+    renderer.setPixelRatio(window.devicePixelRatio);
+    globeEl.appendChild(renderer.domElement);
+    
+    // Shader material
+    const vertexShader = `
+        attribute float delay;
+        varying float vDelay;
+        varying vec3 vPosition;
+    
+        void main() {
+            vDelay = delay;
+            vPosition = (modelViewMatrix * instanceMatrix * vec4(position, 1.0)).xyz;
+            gl_Position = projectionMatrix * modelViewMatrix * instanceMatrix * vec4(position, 1.0);
+        }
+    `;
+    
+    const fragmentShader = `
+        varying float vDelay;
+        varying vec3 vPosition;
+    
+        uniform float time;
+    
+        void main() {
+            float depth = length(vPosition);
+            float intensity = 1.0 - smoothstep(2.2, 4.5, depth);
+    
+            float opacity = 0.4 + 0.5 * sin(time + vDelay);
+            vec3 color = vec3(1.0, 1.0, 1.0) * intensity;
+            gl_FragColor = vec4(color, opacity);
+        }
+    `;
+    
+    // Create globe with pentagons
+    function createGlobeWithPentagons(image, radius, pentagonSize, samples, rowSpacingFactor) {
+        const pentagonGeometry = createPentagonGeometry(pentagonSize);
+        const material = new THREE.ShaderMaterial({
+            vertexShader: vertexShader,
+            fragmentShader: fragmentShader,
+            uniforms: { time: { value: 0.0 } },
+            side: THREE.DoubleSide,
+            transparent: true,
+        });
+    
+        const canvas = document.createElement("canvas");
+        canvas.width = image.width;
+        canvas.height = image.height;
+        const ctx = canvas.getContext("2d");
+        ctx.drawImage(image, 0, 0);
+    
+        const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+        const data = imageData.data;
+    
+        const points = latitudinalSphere(samples, radius, rowSpacingFactor);
+        const instanceCount = points.length;
+    
+        const instancedMesh = new THREE.InstancedMesh(pentagonGeometry, material, instanceCount);
+        const dummy = new THREE.Object3D();
+        const delays = new Float32Array(instanceCount);
+    
+        let visibleInstanceCount = 0;
+        points.forEach((point, i) => {
+            const lat = Math.asin(point.y / radius) * (180 / Math.PI);
+            const lon = Math.atan2(point.z, point.x) * (180 / Math.PI);
+    
+            const x = ((-lon + 180) / 360) * image.width;
+            const y = ((-lat + 90) / 180) * image.height;
+    
+            const index = (Math.floor(y) * image.width + Math.floor(x)) * 4;
+            const brightness = data[index];
+    
+            if (brightness < 128) {
+                dummy.position.copy(point);
+                dummy.lookAt(0, 0, 0);
+                dummy.updateMatrix();
+                instancedMesh.setMatrixAt(visibleInstanceCount, dummy.matrix);
+                delays[visibleInstanceCount] = Math.random() * 5.0;
+                visibleInstanceCount++;
+            }
+        });
+    
+        instancedMesh.instanceMatrix.needsUpdate = true;
+        instancedMesh.geometry.setAttribute("delay", new THREE.InstancedBufferAttribute(delays, 1));
+        instancedMesh.count = visibleInstanceCount;
+    
+        scene.add(instancedMesh);
+    }
+    
+    loader.load(
+        "https://cdn.prod.website-files.com/635c4eeb78332f7971255095/664dab835db5b61d1fdd0f38_earthMap.png",
+        (texture) => {
+            createGlobeWithPentagons(texture.image, 1.5, 0.004, 800, 6);
+        }
+    );
+    
+    // Animation loop
+    function animate() {
+        requestAnimationFrame(animate);
+        scene.rotation.y += 0.001; // Rotate for a complete view
+        renderer.render(scene, camera);
+    }
+    animate();
+    
+    // Resize handler
+    window.addEventListener("resize", () => {
+        const width = globeEl.clientWidth;
+        const height = globeEl.clientHeight;
+        camera.aspect = width / height;
+        camera.updateProjectionMatrix();
+        renderer.setSize(width, height);
+    });
+        </script>
+
+        <script>
+function displayNotes(subject, obj) {
+  // Add styles to the clicked button
+  obj.style.transform = "scale(1.1)";
+  obj.style.backgroundColor = "white";
+  obj.style.color = "#1d1d1d";
+  obj.style.transition = "all 0.3s ease"; // Smooth transition effect
+  obj.style.zIndex=2;
+  // Reset styles for other buttons
+  document.querySelectorAll("button").forEach((btn) => {
+    if (btn !== obj) {
+      btn.style.transform = "scale(1)";
+      btn.style.backgroundColor = "#1d1d1d";
+      btn.style.color = "white";
+      btn.style.zIndex=1;
+    }
+  });
+
+  // Display the content based on subject selection with animation
+  if (subject === "cpp") {
+    cpp.style.display = "flex";
+    
+    cpp.classList.add("fade-in"); // Apply animation for fading in
+    python.style.display = "none";
+    java.style.display = "none";
+  } else if (subject === "python") {
+    python.style.display = "flex";
+    python.classList.add("fade-in"); // Apply animation for fading in
+    cpp.style.display = "none";
+    java.style.display = "none";
+  } else if (subject === "java") {
+    java.style.display = "flex";
+    java.classList.add("fade-in"); // Apply animation for fading in
+    cpp.style.display = "none";
+    python.style.display = "none";
+  }
+}
+
+document.addEventListener('contextmenu', function (e) {
+        e.preventDefault();
+    });
+
+    // Disable keyboard shortcuts commonly used for developer tools
+    document.addEventListener('keydown', function (e) {
+        // Disable F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+U, and other combinations
+        if (e.key === 'F12' || 
+            (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J' || e.key === 'C')) || 
+            (e.ctrlKey && e.key === 'U')) {
+            e.preventDefault();
+        }
+    });
+
+    // Detect if developer tools are open
+    const detectDevTools = () => {
+        const threshold = 100; // Threshold for detecting the console
+        const devToolsOpen = (
+            window.outerWidth - window.innerWidth > threshold ||
+            window.outerHeight - window.innerHeight > threshold
+        );
+
+        if (devToolsOpen) {
+            alert('Developer tools detected! Please close it.');
+            window.location.reload(); // Reload the page or take any action
+        }
+    };
+
+    // Run the detection periodically
+    setInterval(detectDevTools, 1000);
+
+        </script>
+</body>
+
+</html>

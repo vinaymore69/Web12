@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Continuous Dual Marquee</title>
+    <style>
+        body {
+            font-family: 'Moon Walk';
+            margin: 0;
+            padding: 20px;
+            height: 200vh;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: auto;
+        }
+
+        .top {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .marquee-container {
+            position: relative;
+            overflow: hidden;
+            white-space: nowrap;
+            width: 100%; /* Full width */
+            margin-bottom: 20px;
+            height: 50px; /* Control height for the marquee */
+        }
+
+        .marquee-content {
+          position: absolute;
+          display: inline-block;
+          white-space: nowrap;
+          animation: marquee 30s linear infinite;
+        }
+        
+        @keyframes marquee {
+          0% { transform: translateX(100%); }
+          100% { transform: translateX(-100%); }
+        }
+        
+        #marquee1 {
+          animation-delay: 0s; /* Start immediately */
+        }
+        
+        #marquee2 {
+          animation-delay: 15s; /* Delayed start to appear after the first marquee */
+        }
+
+    </style>
+  </head>
+  <body>
+    <div class="top">
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet optio
+        atque libero corrupti numquam saepe nam? Dolorem libero ab consequuntur
+        quibusdam dicta, dolores, voluptatem aperiam mollitia veniam voluptas
+        molestiae velit.</p>
+    </div>
+
+    <div class="marquee-container">
+      <!-- First marquee -->
+      <div class="marquee-content" id="marquee1">
+        <!-- Custom text to scroll -->
+        Dads in town &nbsp;&nbsp;&nbsp;&nbsp; Dads in town &nbsp;&nbsp;&nbsp;&nbsp; Dads in town &nbsp;&nbsp;&nbsp;&nbsp;
+        Dads in town &nbsp;&nbsp;&nbsp;&nbsp; Dads in town &nbsp;&nbsp;&nbsp;&nbsp; Dads in town &nbsp;&nbsp;&nbsp;&nbsp;
+      </div>
+
+      <!-- Second marquee -->
+      <div class="marquee-content" id="marquee2">
+        <!-- Custom text to scroll -->
+        Dads in town &nbsp;&nbsp;&nbsp;&nbsp; Dads in town &nbsp;&nbsp;&nbsp;&nbsp; Dads in town &nbsp;&nbsp;&nbsp;&nbsp;
+        Dads in town &nbsp;&nbsp;&nbsp;&nbsp; Dads in town &nbsp;&nbsp;&nbsp;&nbsp; Dads in town &nbsp;&nbsp;&nbsp;&nbsp;
+      </div>
+    </div>
+
+    <div id="observer"></div>
+
+    <script>
+      let scrollSpeed = 30; // Initial scroll speed in seconds
+      const minSpeed = 40; // Slowest speed
+      const maxSpeed = 15; // Fastest speed
+      
+      function updateMarqueeSpeed() {
+        const scrollPosition = window.scrollY;
+        const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+        const scrollPercentage = scrollPosition / maxScroll;
+        const newSpeed = minSpeed - (minSpeed - maxSpeed) * scrollPercentage;
+      
+        document.getElementById('marquee1').style.animationDuration = `${newSpeed}s`;
+        document.getElementById('marquee2').style.animationDuration = `${newSpeed}s`;
+      
+        // Update the animation speed dynamically
+        document.getElementById('marquee1').style.animationTimingFunction = `linear ${newSpeed}s`;
+        document.getElementById('marquee2').style.animationTimingFunction = `linear ${newSpeed}s`;
+      }
+      
+      window.addEventListener('scroll', updateMarqueeSpeed);
+    </script>
+  </body>
+</html>
